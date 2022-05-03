@@ -1,0 +1,452 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@300;500&family=Source+Sans+Pro:ital,wght@1,200&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Poppins, sans-serif;
+}
+
+.container{
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.topo {
+   border: 1px solid black;
+   box-shadow: 5px 5px 38px 0 rgba(0, 0, 0, 0.72) ;
+   opacity: 0.8;
+   display: flex;
+   align-items: center;
+   height: 60px;
+}
+
+.background-topo{
+    background-image: url(../assets/background.jpg);
+    
+}
+
+.topo-links{
+    max-width: 1024px;
+    text-align: center;
+    margin: 0 auto;
+    position: relative;
+    right: 90px;
+}
+
+.links-topo a{
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px;
+    margin-top: 20px;
+    color: white;
+    text-transform: uppercase;
+    text-shadow: 5px 5px 5px black;
+    font-weight: 700;
+}
+
+.links-topo a:hover{
+    font-size: 28px;
+    box-shadow: 4px 4px 10px black;
+}
+
+.saucacao-background{
+    background-image: url(../assets/background.jpg);
+    background-position: relative;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.conteudo{
+    color: rgb(255, 248, 248);
+    text-shadow: 4px 5px 26px black;
+    font-size: 34px;
+}
+
+.conteudo{
+    visibility: hidden;
+}
+
+/*Sobre*/
+#sobre{
+    height: 90vh;
+    display: flex;
+    background-attachment: fixed;
+    background-image: url(../assets/background.jpg);
+}
+
+#sobre img{
+  
+    margin-top: 160px;
+    max-width: 400px;
+    transform: translate(0px);
+    animation: float 5s ease-in-out infinite ;
+
+}
+
+@keyframes float{
+    0%{
+        transform: translatey(0px)
+    }
+    50%{
+        transform: translate(-30px);
+    }
+    100%{
+        transform: translate(0px);
+    }
+}
+
+
+.sobre h3{
+    margin-top: 100px ;
+    text-align: center;
+}
+
+.sobre, .estudos-textos{
+    font-size: 30px;
+    margin-bottom: 40px;
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+    text-shadow: 4px 5px 27px black;
+}
+
+/* Estudos*/
+
+.background-estudos{
+    background-color: #eea485;
+    height: 75vh;
+}
+
+
+.estudos-textos{
+    text-align: center;
+    padding-top: 50px;
+    text-transform: uppercase;
+}
+
+.estudos-textos p{
+    padding-top: 20px;
+    font-size: 17px;
+}
+
+.linguagens-blocos{
+    display: flex;
+    flex-direction: column;
+    height: 75vh
+    
+}
+
+.bloco-estudo{
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    margin: 20px
+}
+
+.bloco-estudo p{
+    margin-left: 40px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.bloco-estudo img{
+    width: 50px
+}
+
+
+
+.rodape{
+    background-color: white;
+    display: flex;
+    width: 40%;
+}
+
+footer h4{
+    font-size: 30px;
+    color: rgb(27, 27, 27);
+}
+
+footer .creditos{
+    font-size: 19px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.rodape img{
+    max-width: 50px;
+    object-fit: contain;
+}
+
+.bloco-contato{
+    display: flex;
+    margin: 0 70px;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (min-width: 721px) and (max-width: 1310px){
+    .links-topo{
+        text-align: center;
+        padding-left: 90px;
+        max-width: 400px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .links-topo a{
+        font-size: 20px;
+        padding: 23px;
+    }
+
+    .conteudo{
+        font-size: 30px;
+    }
+    
+    #sobre{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sobre h3{
+        margin-top: 30px ;
+        text-align: center;
+        font-size: 25px;
+        margin-bottom: 40px;
+    }
+
+    .sobre p {
+        font-size: 20px;
+        margin: 10px;
+    }
+
+    .sobre-img img{
+        margin: 0;
+        position: relative;
+        bottom: 150px;
+        text-align: center;
+        width: 400px; 
+    }
+
+    .estudos-textos p{
+        display: none;
+    }
+    
+    .bloco-estudo .texto-bloco p{
+        font-size: 19px;
+    }
+    
+    .bloco-estudo p{
+        visibility: visible;
+    }
+    
+    footer h4{
+        font-size: 24px;
+    }
+    
+    .rodape{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        max-width: 600px;
+    }
+
+    footer .creditos{
+        margin-top: 20px;
+        font-size: 14px;
+    }
+    
+
+}
+
+@media (max-width: 720px){
+    .links-topo{
+        text-align: center;
+        padding-left: 90px;
+        max-width: 300px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .links-topo a{
+        font-size: 14px;
+        padding: 17px;
+    }
+
+    .conteudo{
+        font-size: 30px;
+    }
+
+    .saucacao-background{
+        height: 100vh;
+    }
+
+    /* bloco Sobre*/
+    .sobre h3{
+        margin-top: 100px ;
+        text-align: center;
+        font-size: 20px;
+        margin-bottom: 40px;
+    }
+
+    .sobre p {
+        font-size: 22px;
+        margin: 10px;
+    }
+
+    .sobre-img img{
+        display: none;
+    }
+
+/* Fim - bloco sobre */
+
+.estudos-textos p{
+    display: none;
+}
+
+.bloco-estudo .texto-bloco p{
+    font-size: 13px;
+}
+
+.bloco-estudo p{
+    visibility: visible;
+}
+
+footer h4{
+    font-size: 14px;
+}
+
+.rodape{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    max-width: 400px;
+}
+
+.bloco-contato{
+    display: flex;
+    margin:0 auto;
+   padding-left: 70px;
+}
+
+.bloco-contato p{
+    text-decoration: none;
+}
+
+footer .creditos{
+    margin-top: 20px;
+    font-size: 10px;
+}
+
+
+
+
+
+}
+
+@media (max-width: 420px){
+
+    .links-topo{
+        text-align: center;
+        padding-left: 100px;
+        max-width: 400px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .links-topo a{
+        font-size: 13px;
+        padding: 17px;
+    }
+
+    .links-topo a:hover{
+        font-size: 13px;
+        box-shadow: 4px 4px 10px black;
+    }
+
+    .conteudo{
+        font-size: 20px;
+    }
+
+    .saucacao-background{
+        height: 100vh;
+    }
+
+/* bloco Sobre*/
+    .sobre h3{
+        margin-top: 100px ;
+        text-align: center;
+        font-size: 20px;
+        margin-bottom: 40px;
+    }
+
+    .sobre p {
+        font-size: 16px;
+        margin: 10px;
+    }
+
+    .sobre-img img{
+        display: none;
+    }
+
+/* Fim - bloco sobre */
+
+
+    .linguagens-blocos{
+        height: 100vh;
+
+    }
+
+    .estudos-textos p{
+        display: none;
+    }
+
+    .bloco-estudo .texto-bloco p{
+        font-size: 10px;
+    }
+
+    .bloco-estudo img{
+        width: 50px;
+
+    }
+
+    .bloco-estudo p{
+        visibility: visible;
+    }
+
+    footer h4{
+        font-size: 14px;
+    }
+
+    .rodape{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        max-width: 400px;
+    }
+
+    .bloco-contato{
+        display: flex;
+        margin:0 auto;
+       padding-left: 70px;
+    }
+    
+    .bloco-contato p{
+        text-decoration: none;
+    }
+
+    footer .creditos{
+        margin-top: 20px;
+        font-size: 10px;
+    }
+
+}
